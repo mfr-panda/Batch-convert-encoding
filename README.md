@@ -3,7 +3,7 @@ Batch convert encoding in files
 
 Useful when you have mutiple files with non-UTF-8 encoding (ex : .txt or .php files from Windows).
 
-The script search recursively for files with specified FileType, test if they are UTF-8 and convert them if not.
+The script search recursively for files with specified File Type, test if they are UTF-8 and convert them if not.
 
 Source Encoding, Output Encoding and File Type can be specified in the script.
 
@@ -13,6 +13,8 @@ install *moreutils* : `apt install moreutils`
 
 
 ## Usage
+
+To find the encoding of original file : `chardet [filename.extension]` or `chardet *.[extension]` to test multiple files.
 
 Put the script in the root folder of the files you want to convert. (the script will also search in sub-folders).
 
